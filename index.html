@@ -53,6 +53,8 @@ h2{font:700 clamp(28px,4vw,40px)/1.15 var(--serif);margin:0 0 12px}
 .art.other .tag{color:var(--muted)}
 .art h3{font:700 21px/1.3 var(--serif);margin:0 0 6px}
 .art p{margin:0;color:var(--muted);font-size:16px}
+.tg-pub-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.tg-pub-actions .btn{padding:9px 16px;font-size:14px}
 .courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .course{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--acc);padding:24px;display:flex;flex-direction:column;gap:12px;border-radius:2px}
 .course h3{font:700 21px/1.3 var(--serif);margin:0}
@@ -96,7 +98,7 @@ footer p{margin:0;color:var(--muted)}
 </head>
 <body>
 <header><div class="wrap"><a class="logo" href="#top">Оксана Маслова</a>
-<nav aria-label="Разделы"><a href="#industry">Отрасль</a><a href="#opinions">Мнения</a><a href="#services">Услуги</a><a href="#courses">Курсы</a><a href="#contacts">Контакты</a></nav></div></header>
+<nav aria-label="Разделы"><a href="#industry">Отрасль</a><a href="#opinions">Мнения</a><a href="#services">Услуги</a><a href="#courses">Курсы</a><a href="#telegram-publications">Telegram</a><a href="#contacts">Контакты</a></nav></div></header>
 
 <main id="top">
 <div class="wrap hero">
@@ -139,6 +141,23 @@ footer p{margin:0;color:var(--muted)}
 <article class="art other"><span class="tag">Мнение коллеги</span><div><h3>Передача данных в облачные модели: комплаенс-риски</h3><p>Позиция коллеги по рынку; название и автор будут добавлены.</p></div></article>
 </div></div></section>
 
+
+<section id="telegram-publications"><div class="wrap">
+<h2>Публикации Telegram-канала «Три весёлых гуся»</h2>
+<p class="sub">Публикации канала можно читать прямо на сайте или перейти к оригиналу в Telegram.</p>
+<article class="art tg-pub">
+<span class="tag">Три весёлых гуся</span>
+<div>
+<h3>🚀 «Цифра права»: роботы, поезда и KYT или что я привезла с главного форума года</h3>
+<p>Впечатления с форума «Цифра права»: технологии, регулирование и люди, которые меняют отрасль.</p>
+<div class="tg-pub-actions">
+<a class="btn main" href="article-cifra-prava.html">Читать на сайте</a>
+<a class="btn alt" href="https://t.me/threehappygooses/177" target="_blank" rel="noopener noreferrer">Читать в Telegram</a>
+</div>
+</div>
+</article>
+</div></section>
+
 <section id="services"><div class="wrap">
 <h2>Услуги</h2>
 <p class="sub">Стоимость зависит от объёма задачи и называется после первого разговора.</p>
@@ -164,7 +183,8 @@ footer p{margin:0;color:var(--muted)}
 <p><a href="mailto:9271964@gmail.com">9271964@gmail.com</a></p>
 <p><a href="tel:+79119271964">+7 (911) 927-19-64</a></p>
 <p><a href="https://wa.me/79119271964" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
-<p><a href="https://t.me/MaslovaOksanalawyer" target="_blank" rel="noopener noreferrer">Telegram: @MaslovaOksanalawyer</a></p>
+<p><a href="https://t.me/MaslovaOksanalawyer" target="_blank" rel="noopener noreferrer">Личный Telegram: @MaslovaOksanalawyer</a></p>
+<p><a href="https://t.me/threehappygooses" target="_blank" rel="noopener noreferrer">Telegram-канал «Три весёлых гуся»</a></p>
 <p><button type="button" class="ck-link" id="ck-reopen">Настройки cookie</button></p>
 <!-- LinkedIn: добавим ссылку на профиль позже. -->
 </div>
