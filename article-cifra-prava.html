@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>🚀 «Цифра права»: роботы, поезда и KYT — Оксана Маслова</title>
+<meta name="description" content="Впечатления Оксаны Масловой с форума «Цифра права»: роботы-доставщики, беспилотные поезда, регулирование цифровой среды и KYT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEEBE3;--paper:#F7F4EC;--ink:#1D2130;--muted:#5A6275;--line:#1D2130;--soft:#CFCABD;--acc:#8A2A45;--acc-ink:#FFFFFF;--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"Golos Text",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C}}
+:root[data-theme="dark"]{--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 var(--serif)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.sheet{max-width:960px;margin:24px auto;padding:0 24px}
+.paper{background:var(--paper);border:1px solid var(--soft);padding:28px 48px 56px;box-shadow:0 10px 40px rgba(0,0,0,.08)}
+.topbar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:500 14px var(--sans);color:var(--muted);padding-bottom:10px}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:var(--ink);text-decoration:underline}
+.masthead{text-align:center;border-top:4px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0 12px;position:relative}
+.masthead::after{content:"";position:absolute;left:0;right:0;bottom:-6px;border-bottom:1px solid var(--line)}
+.masthead a{text-decoration:none}
+.masthead h1{font:700 clamp(34px,6.5vw,64px)/1.05 var(--serif);letter-spacing:.02em;margin:0;text-transform:uppercase}
+.masthead p{margin:6px 0 0;font:italic 400 16px var(--serif);color:var(--muted)}
+.dateline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;padding:6px 0;border-bottom:1px solid var(--soft);font:500 13px var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+article{margin-top:36px}
+.kicker{font:600 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:0 0 12px;text-align:center}
+.headline{font:700 clamp(32px,5.4vw,54px)/1.1 var(--serif);text-align:center;margin:0 auto 18px;max-width:18em;text-wrap:balance}
+.deck{font:italic 400 clamp(19px,2.4vw,23px)/1.5 var(--serif);color:var(--muted);text-align:center;max-width:36em;margin:0 auto 22px}
+.byline{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;font:500 14px var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.byline span+span::before{content:"•";margin-right:18px;color:var(--acc)}
+.body{margin-top:32px;column-count:2;column-gap:44px;column-rule:1px solid var(--soft);text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.body p{margin:0 0 1em}
+.body h2{font:700 22px/1.25 var(--serif);margin:1.4em 0 .5em;break-after:avoid;text-align:left}
+.body>p:first-of-type::first-letter{font:700 4.6em/.8 var(--serif);float:left;padding:.08em .1em 0 0;color:var(--acc)}
+.pull{column-span:all;margin:28px 0;padding:18px 0;border-top:3px double var(--line);border-bottom:3px double var(--line);text-align:center;font:italic 400 clamp(22px,3vw,30px)/1.4 var(--serif)}
+.placeholder{column-span:all;border:1px dashed var(--muted);padding:14px 18px;margin:0 0 24px;font:500 15px/1.5 var(--sans);color:var(--muted);text-align:center;background:transparent}
+.end{text-align:center;margin:30px 0 0;color:var(--acc);letter-spacing:.6em;font-size:18px}
+.author{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:36px;padding:20px 0;border-top:1px solid var(--line);border-bottom:4px solid var(--line);font:400 15px/1.55 var(--sans)}
+.author p{margin:0;color:var(--muted)}
+.author strong{color:var(--ink)}
+.btn{display:inline-block;padding:11px 20px;border-radius:2px;font:600 15px var(--sans);text-decoration:none;border:2px solid var(--acc);background:var(--acc);color:var(--acc-ink);white-space:nowrap}
+.btn:hover{opacity:.9}
+.back{margin-top:28px;text-align:center;font:500 15px var(--sans)}
+.back a{color:var(--acc)}
+footer{text-align:center;font:400 13px var(--sans);color:var(--muted);padding:20px 0 40px}
+@media (max-width:760px){
+.sheet{padding:0 12px;margin:12px auto}
+.paper{padding:18px 20px 36px}
+.body{column-count:1;text-align:left;hyphens:manual;-webkit-hyphens:manual}
+.author{grid-template-columns:1fr}
+.dateline{font-size:12px}
+}
+@media print{body{background:#fff}.paper{box-shadow:none;border:0}.topbar,.back,.btn{display:none}}
+.telegram-embed{column-span:all;max-width:100%;margin:24px auto}
+.telegram-embed iframe{max-width:100%}
+@media (max-width:760px){.telegram-embed{margin:16px 0}}
+</style>
+</head>
+<body>
+<div class="sheet"><div class="paper">
+
+<div class="topbar"><a href="index.html#telegram-publications">← Все публикации</a><a href="https://t.me/threehappygooses/177" target="_blank" rel="noopener noreferrer">Открыть оригинал в Telegram ↗</a></div>
+
+<header class="masthead">
+<a href="index.html" aria-label="На главную"><h1>Три&nbsp;весёлых&nbsp;гуся</h1></a>
+<p>Публикации и заметки Оксаны Масловой</p>
+</header>
+<div class="dateline"><span>Форум «Цифра права»</span><span>29 октября 2026</span><span>Публикация Telegram</span></div>
+
+<article>
+<p class="kicker">Форум · технологии · право</p>
+<h1 class="headline">🚀 «Цифра права»: роботы, поезда и KYT или что я привезла с главного форума года</h1>
+<p class="deck">Роботы-доставщики, беспилотные поезда, регулирование цифровой среды и KYT — впечатления с форума «Цифра права».</p>
+<div class="byline"><span>Оксана Маслова</span><span>29 октября 2026</span></div>
+
+<div class="body">
+<div class="placeholder">
+<p><strong>Оригинальная публикация канала «Три весёлых гуся»</strong></p>
+<p>Полный текст поста загружается из Telegram. Если встроенная публикация не отображается, воспользуйтесь ссылкой ниже.</p>
+<p><a href="https://t.me/threehappygooses/177" target="_blank" rel="noopener noreferrer">Открыть публикацию в Telegram ↗</a></p>
+</div>
+<div class="telegram-embed">
+<script async src="https://telegram.org/js/telegram-widget.js?24" data-telegram-post="threehappygooses/177" data-width="100%"></script>
+</div>
+<p class="end">***</p>
+</div>
+
+<div class="author">
+<p><strong>Оксана Маслова</strong> — юрист в сфере IT и международного права. Публикация размещена на сайте в дополнение к оригиналу в Telegram-канале «Три весёлых гуся».</p>
+<a class="btn" href="https://t.me/threehappygooses/177" target="_blank" rel="noopener noreferrer">Открыть в Telegram</a>
+</div>
+
+<p class="back"><a href="index.html#telegram-publications">← Вернуться к публикациям канала</a></p>
+</article>
+
+</div>
+<footer>© Оксана Маслова</footer>
+</div>
+</body>
+</html>
