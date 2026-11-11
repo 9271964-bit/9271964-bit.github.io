@@ -8,9 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#EEEBE3;--paper:#F7F4EC;--ink:#1D2130;--muted:#5A6275;--line:#1D2130;--soft:#CFCABD;--acc:#8A2A45;--acc-ink:#FFFFFF;--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"Golos Text",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C}}
-:root[data-theme="dark"]{--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C}
+:root{--bg:#EEEBE3;--paper:#F7F4EC;--ink:#1D2130;--muted:#5A6275;--line:#1D2130;--soft:#CFCABD;--acc:#8A2A45;--acc-ink:#FFFFFF;--blue:#1A5FB4;--serif:"PT Serif",Georgia,"Times New Roman",serif;--sans:"Golos Text",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C;--blue:#7FB0FF}}
+:root[data-theme="dark"]{--blue:#7FB0FF;--bg:#101217;--paper:#1B1E26;--ink:#E8EAF0;--muted:#9AA1B3;--line:#E8EAF0;--soft:#363A46;--acc:#E08AA3;--acc-ink:#14161C}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 var(--serif)}
@@ -36,9 +36,14 @@ article{margin-top:36px}
 .body{margin-top:32px;column-count:2;column-gap:44px;column-rule:1px solid var(--soft);text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .body p{margin:0 0 1em}
 .body h2{font:700 22px/1.25 var(--serif);margin:1.4em 0 .5em;break-after:avoid;text-align:left}
-.body>p:first-of-type::first-letter{font:700 4.6em/.8 var(--serif);float:left;padding:.08em .1em 0 0;color:var(--acc)}
+.body h2:first-child{margin-top:0}
+.cover{margin:32px auto 0;max-width:560px}
+.cover img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.sign{margin-top:1.2em;font-style:italic;color:var(--muted);text-align:left}
+.sign a{color:var(--acc)}
+.lnk{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.lnk:hover{text-decoration-thickness:2px}
 .pull{column-span:all;margin:28px 0;padding:18px 0;border-top:3px double var(--line);border-bottom:3px double var(--line);text-align:center;font:italic 400 clamp(22px,3vw,30px)/1.4 var(--serif)}
-.placeholder{column-span:all;border:1px dashed var(--muted);padding:14px 18px;margin:0 0 24px;font:500 15px/1.5 var(--sans);color:var(--muted);text-align:center;background:transparent}
 .end{text-align:center;margin:30px 0 0;color:var(--acc);letter-spacing:.6em;font-size:18px}
 .author{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:36px;padding:20px 0;border-top:1px solid var(--line);border-bottom:4px solid var(--line);font:400 15px/1.55 var(--sans)}
 .author p{margin:0;color:var(--muted)}
@@ -56,9 +61,6 @@ footer{text-align:center;font:400 13px var(--sans);color:var(--muted);padding:20
 .dateline{font-size:12px}
 }
 @media print{body{background:#fff}.paper{box-shadow:none;border:0}.topbar,.back,.btn{display:none}}
-.telegram-embed{column-span:all;max-width:100%;margin:24px auto}
-.telegram-embed iframe{max-width:100%}
-@media (max-width:760px){.telegram-embed{margin:16px 0}}
 </style>
 </head>
 <body>
@@ -74,19 +76,40 @@ footer{text-align:center;font:400 13px var(--sans);color:var(--muted);padding:20
 
 <article>
 <p class="kicker">Форум · технологии · право</p>
-<h1 class="headline">🚀 «Цифра права»: роботы, поезда и KYT или что я привезла с главного форума года.</h1>
+<h1 class="headline">🚀 «Цифра права»: роботы, поезда и KYT или что я привезла с главного форума года</h1>
 <p class="deck">Роботы-доставщики, беспилотные поезда, регулирование цифровой среды и KYT — впечатления с форума «Цифра права».</p>
 <div class="byline"><span>Оксана Маслова</span><span>29 октября 2026</span></div>
 
+<figure class="cover">
+<img src="images/cifra-prava.jpg" alt="Иллюстрация к посту: «Цифра права» — что я привезла с главного форума года. Роботы, поезда и KYT: главное — инфраструктура, а не железо. Надпись на выноске: «Иногда хватит договора!!!»" width="2290" height="2576" loading="eager">
+</figure>
+
 <div class="body">
-<div class="placeholder">
-<p><strong>Оригинальная публикация канала «Три весёлых гуся»</strong></p>
-<p>Полный текст поста загружается из Telegram. Если встроенная публикация не отображается, воспользуйтесь ссылкой ниже.</p>
-<p><a href="https://t.me/threehappygooses/177" target="_blank" rel="noopener noreferrer">Открыть публикацию в Telegram ↗</a></p>
-</div>
-<div class="telegram-embed">
-<script async src="https://telegram.org/js/telegram-widget.js?24" data-telegram-post="threehappygooses/177" data-width="100%"></script>
-</div>
+<p>29 октября посетила <a class="lnk" href="https://event.pravo.ru/event/205/" target="_blank" rel="noopener noreferrer">Форум «Цифра права»</a> и это тот редкий случай, когда конференция не про «общие слова», а про то, чем живут ИТ юристы. Делюсь тем, что зацепило больше всего.</p>
+
+<h2>🤖 Роботы-доставщики: их больше, чем кажется</h2>
+<p>Знаете этих маленьких роверов, которые катаются по тротуарам? Я думала, их десятки. А по Москве их уже сотни, и они доставляют около 750 тысяч посылок в день. И это только начало: по прогнозам, к концу года их число вырастет до 3 тысяч, а в рамках экспериментального правового режима (ЭПР) допускают рост до 12 тысяч единиц. За беспилотными такси гонятся беспилотные поезда: на БКЛ уже вовсю тестируют первый в России беспилотный состав, а к концу 2026 года он должен выйти на постоянный график.</p>
+
+<h2>💡 Открытие №1: главное — не транспорт, а инфраструктура</h2>
+<p>Самое важное при запуске беспилотников не сам «умный» автомобиль или ровер, а подготовка среды, в которой он движется, без этого даже идеальный алгоритм бесполезен.</p>
+
+<h2>💡 Открытие №2: ЭПР — не всегда панацея</h2>
+<p>Принято думать, что для любой инновации нужен экспериментальный правовой режим, но на форуме прозвучала мысль, которая многих удивила: многие вопросы можно закрыть обычными договорными конструкциями и без специального режима. ЭПР — это тяжёлая артиллерия, и иногда достаточно просто грамотно прописать отношения в договоре.</p>
+
+<h2>🎭 Любимая секция: «Культурный код: тетрис по созданию и регулированию контента»</h2>
+<p>Здесь <a href="https://t.me/Juschas" target="_blank" rel="noopener noreferrer">@Juschas</a> практически срежиссировала мини-спектакль про игры, медиа и регулирование контента. Было всё: и смех сквозь слёзы, и любовь к антропологии. Одна из самых человечных и неожиданных сессий за весь форум.</p>
+
+<h2>🏦 Неожиданный фаворит: представитель ЦБ</h2>
+<p>Казалось бы, цифровые активы — тема узкая, но Михаил Ионцев из Центробанка был настолько харизматичен, что даже те, кто криптой никогда не интересовался, слушали заворожённо.</p>
+
+<h2>🔍 Открытие №3: KYT — новый герой due diligence</h2>
+<p>В криптоактивах появилось понятие, которое постепенно перебирается в общий legal due diligence — KYT (Know Your Transaction). Это проверка каждой транзакции: откуда пришли средства, куда ушли, нет ли связи с санкциями или мошенничеством. Привычный KYC проверяет «кто ты», а KYT — «что ты делаешь с деньгами». Для сделок с цифровыми активами это становится базовым стандартом.</p>
+
+<p class="pull">Самое ценное — это, конечно, люди.</p>
+
+<p>Было здорово увидеть старых знакомых и познакомиться с новыми. Именно ради таких встреч и стоит ходить на «Цифру права». <a class="lnk" href="https://pravo.ru/story/266552/" target="_blank" rel="noopener noreferrer">Полный обзор всех секций можно почитать здесь 📣</a>.</p>
+
+<p class="sign">Маслова Оксана <a href="https://t.me/MaslovaOksanalawyer" target="_blank" rel="noopener noreferrer">@MaslovaOksanalawyer</a></p>
 <p class="end">***</p>
 </div>
 
